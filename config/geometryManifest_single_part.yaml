@@ -1,0 +1,6 @@
+parts:
+  singlePart:
+    file: diffusor.stl
+    patch: singlePart
+    include: true
+    group: fixed

@@ -1,0 +1,20 @@
+inputDirectory: geometry/production
+outputDirectory: geometry/production_repaired
+units: mm
+mode: report
+masterPart: body.stl
+distanceToleranceMeters: 0.0005
+normalAngleToleranceDeg: 15.0
+secondaryParts:
+- underbody.stl
+- sidepod_left.stl
+- sidepod_right.stl
+- diffuser.stl
+- driver.stl
+- rollhoop.stl
+- suspension_FL.stl
+- suspension_FR.stl
+- suspension_RL.stl
+- suspension_RR.stl
+- counterWing_left.stl
+- counterWing_right.stl

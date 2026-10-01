@@ -1,0 +1,8 @@
+PyYAML>=6.0
+numpy>=1.23
+scipy>=1.9
+trimesh>=4.0
+XlsxWriter>=3.1
+Networkx>=3.0
+Rtree>=1.0
+python-docx>=1.1

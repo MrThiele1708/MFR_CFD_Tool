@@ -1,0 +1,44 @@
+# Pairwise contact-face repair configuration
+inputDirectory: geometry/production
+outputDirectory: geometry/production_repaired_pairs
+units: mm
+mode: report
+distanceToleranceMeters: 0.0005
+normalAngleToleranceDeg: 15.0
+
+# The master keeps its faces. Candidate faces are removed only from secondary.
+contactPairs:
+  - master: body.stl
+    secondary: underbody.stl
+  - master: body.stl
+    secondary: sidepod_left.stl
+  - master: body.stl
+    secondary: sidepod_right.stl
+  - master: body.stl
+    secondary: driver.stl
+  - master: body.stl
+    secondary: rollhoop.stl
+  - master: body.stl
+    secondary: diffuser.stl
+  - master: body.stl
+    secondary: counterWing_left.stl
+  - master: body.stl
+    secondary: counterWing_right.stl
+  - master: underbody.stl
+    secondary: diffuser.stl
+  - master: sidepod_left.stl
+    secondary: underbody.stl
+  - master: sidepod_right.stl
+    secondary: underbody.stl
+  - master: sidepod_left.stl
+    secondary: diffuser.stl
+  - master: sidepod_right.stl
+    secondary: diffuser.stl
+  - master: body.stl
+    secondary: suspension_FL.stl
+  - master: body.stl
+    secondary: suspension_FR.stl
+  - master: body.stl
+    secondary: suspension_RL.stl
+  - master: body.stl
+    secondary: suspension_RR.stl

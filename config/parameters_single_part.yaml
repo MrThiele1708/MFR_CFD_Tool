@@ -1,0 +1,89 @@
+project:
+  case: case_single_part
+  results: results_single_part
+  windowsResults: ''
+geometry:
+  profile: single_part
+  manifest: config/geometryManifest_single_part.yaml
+  inputUnits: mm
+  assemblyMapping:
+    enabled: false
+  vehicleForwardAxis: +x
+  rideHeight: 0.0
+  pitchAngle: 0.0
+  rollAngle: 0.0
+  steeringAngle: 0.0
+  contactAwareMorph:
+    enabled: false
+flow:
+  speed: 13.889
+  yawAngle: 0.0
+  wheelSlip: 0.0
+  turbulenceIntensity: 0.01
+  turbulenceLengthScale: 0.1
+boundaryConditions:
+  movingGround: false
+  rotatingWheels: false
+  groundCondition: slip
+air:
+  rho: 1.2041
+  nu: 1.511e-05
+  temperatureK: 293.15
+  pressurePa: 101325
+reference:
+  area: 1.0
+  length: 1.0
+  momentCenter: auto
+solver:
+  mode: steady
+  steady: simpleFoam
+  steadyEndTime: 50
+  steadyWriteInterval: 10
+mesh:
+  level: quick
+  domain: small
+  nCellsBetweenLevels: 7
+  addLayers: false
+  presets:
+    small:
+      inlet: 3
+      outlet: 6
+      side: 3
+      top: 3
+    reference:
+      inlet: 3
+      outlet: 10
+      side: 5
+      top: 5
+    large:
+      inlet: 3
+      outlet: 15
+      side: 8
+      top: 8
+  refinementRegions:
+    singlePart:
+      min:
+      - 0.25149230957031254
+      - -0.7908626708984375
+      - -0.002084297180175783
+      max:
+      - 0.8429173583984375
+      - 0.7911373291015625
+      - 0.371908203125
+      level: 2
+  features:
+    enabled: false
+radiator:
+  enabled: false
+postProcessing:
+  imageWidth: 1280
+  imageHeight: 720
+  sliceStart: -0.2
+  sliceSpacing: 0.1
+  sliceBehind: 0.5
+vehicle:
+  wheelbase: 1.0
+  tireDiameter: 0.0
+  tireWidth: 0.0
+  frontTrack: 0.0
+  rearTrack: 0.0

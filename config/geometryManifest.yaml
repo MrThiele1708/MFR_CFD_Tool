@@ -1,0 +1,104 @@
+parts:
+  body:
+    file: body.stl
+    patch: body
+    include: true
+    group: sprung
+  frontWing:
+    file: frontWing.stl
+    patch: frontWing
+    include: true
+    group: sprung
+  rearWing:
+    file: rearWing.stl
+    patch: rearWing
+    include: true
+    group: sprung
+  counterWingLeft:
+    file: counterWing_left.stl
+    patch: counterWingLeft
+    include: true
+    group: sprung
+  counterWingRight:
+    file: counterWing_right.stl
+    patch: counterWingRight
+    include: true
+    group: sprung
+  diffuser:
+    file: diffuser.stl
+    patch: diffuser
+    include: true
+    group: sprung
+  underbody:
+    file: underbody.stl
+    patch: underbody
+    include: true
+    group: sprung
+  sidepodLeft:
+    file: sidepod_left.stl
+    patch: sidepodLeft
+    include: true
+    group: sprung
+  sidepodRight:
+    file: sidepod_right.stl
+    patch: sidepodRight
+    include: true
+    group: sprung
+  driver:
+    file: driver.stl
+    patch: driver
+    include: true
+    group: sprung
+  rollhoop:
+    file: rollhoop.stl
+    patch: rollhoop
+    include: true
+    group: sprung
+  suspensionFL:
+    file: suspension_FL.stl
+    patch: suspensionFL
+    include: true
+    group: unsprung
+  suspensionFR:
+    file: suspension_FR.stl
+    patch: suspensionFR
+    include: true
+    group: unsprung
+  suspensionRL:
+    file: suspension_RL.stl
+    patch: suspensionRL
+    include: true
+    group: unsprung
+  suspensionRR:
+    file: suspension_RR.stl
+    patch: suspensionRR
+    include: true
+    group: unsprung
+  wheelFL:
+    file: wheel_FL.stl
+    patch: wheelFL
+    include: true
+    group: unsprung
+  wheelFR:
+    file: wheel_FR.stl
+    patch: wheelFR
+    include: true
+    group: unsprung
+  wheelRL:
+    file: wheel_RL.stl
+    patch: wheelRL
+    include: true
+    group: unsprung
+  wheelRR:
+    file: wheel_RR.stl
+    patch: wheelRR
+    include: true
+    group: unsprung
+  radiatorLeft:
+    file: radiator_left_volume.stl
+    patch: radiatorLeft
+    include: false
+  radiatorRight:
+    file: radiator_right_volume.stl
+    patch: radiatorRight
+    include: false

@@ -1,0 +1,10 @@
+project: FormulaStudentCFD
+version: 0.1
+software: {openfoam: OpenFOAM-13 Foundation, ubuntu: 22.04, wsl: WSL2, paraview: 5.10.0-RC1}
+coordinates: {x: rear_to_front, y: vehicle_left, z: up, ground_z: 0, forward_axis: +x}
+windTunnel: {inlet: xMax, outlet: xMin, flow: -x, inlet_distance_vehicle_lengths: 3, side_top: slip, ground: moving}
+vehicle: {wheelbase: 1.56, tire_diameter: 0.410, tire_width: 0.225, front_track: 1.230, rear_track: 1.200}
+reference: {area_m2: 1.0, length_m: 1.56, moment_center: axle_midpoint_at_z0}
+physics: {default_solver: simpleFoam, future_solver: pimpleFoam, turbulence: kOmegaSST, wheel_model: rotatingWallVelocity}
+slices: {start_s: -0.20, spacing_m: 0.10, end_s: vehicle_length_plus_0.50, plane: y-z_normal_x}
+outputs: {fields: [static_pressure_over_inlet, velocity_magnitude, total_pressure_over_inlet], png: [1280,720], excel: xlsx_with_embedded_images}
